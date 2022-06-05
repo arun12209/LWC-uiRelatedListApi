@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="wireGetRelatedListsInfo">
+        <template if:true={relatedLists}>
+            <div class="slds-m-around_medium">
+                <template for:each={relatedLists} for:item="relatedList">
+                    <p key={relatedList.label}>
+                        {relatedList.label}
+                    </p>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>

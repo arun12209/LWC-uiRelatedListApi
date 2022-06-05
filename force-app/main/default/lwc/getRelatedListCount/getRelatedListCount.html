@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="wireGetRelatedListCount">
+        <template if:true={responseData}>
+            <div class="slds-m-around_medium">                
+                    <p key={responseData.count}>
+                        {responseData.count} : {responseData.hasMore}
+                    </p>                
+            </div>
+        </template>
+    </lightning-card>
+</template>
